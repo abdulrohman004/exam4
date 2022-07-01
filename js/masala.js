@@ -6,4 +6,6 @@ const obj = {
     Phone: '$350',
     Notebook: '$870',
 }
-    
+
+
+console.log('uzur ustoz ulgurmadim');
