@@ -6,6 +6,7 @@ const elToDoTemplate = document.querySelector(".template").content;
 const elToDoButton = document.querySelector(".add-todo__btn");
 const elToDoForm = document.querySelector(".add-todo");
 const elToDoInput = document.querySelector(".add-todo__input");
+const elLogOut = document.querySelector('.log-out')
 
 //ADD TO DO
 async function addToDo(user) {
@@ -19,6 +20,11 @@ async function addToDo(user) {
   });
 }
 
+elLogOut.addEventListener("click", (e)=>{
+  e.preventDefault
+  localStorage.removeItem("token")
+    location.pathname = "auth.html"
+})
 async function toDoRender() {
   const response = await fetch(`${URL}/todos`, {
     method: "GET",

@@ -92,7 +92,7 @@ img {
   margin-right: 8px;
 }
 
-.todo__checkbox:checked + .todo__text {
+.todo__checkbox:checked+.todo__text {
   text-decoration: line-through;
 }
 
@@ -106,15 +106,26 @@ img {
   cursor: pointer;
   color: red;
 }
-.masala{
+
+.masala {
   font-size: x-large;
   width: 200px;
-  margin:100px auto ;
+  margin: 100px auto;
   padding: 10px;
   background-color: brown;
 
 }
-.link{
+
+.link {
   color: aliceblue;
   text-decoration: none;
+}
+
+.log-out {
+  position: absolute;
+  top: 35px;
+  left: 1230px;
+  width: 100px;
+  color: blueviolet;
+  padding: 0;
 }
