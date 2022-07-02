@@ -18,8 +18,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Poppins", "Arial", sans-serif;
-  background-color: #080710;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
 }
 
 img {
@@ -27,176 +27,105 @@ img {
   height: auto;
 }
 
-.background {
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.background .shape {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius: 50%;
+.add-todo {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
 }
 
-.shape:first-child {
-  background: linear-gradient(#1845ad, #23a2f6);
-  left: -80px;
-  top: -80px;
+.add-todo__input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid darkcyan;
+  border-radius: 6px;
+  outline: 1px solid darkslategrey;
 }
 
-.shape:last-child {
-  background: linear-gradient(to right, #ff512f, #f09819);
-  right: -30px;
-  bottom: -80px;
-}
-
-form {
-  height: 520px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 50px 35px;
-}
-
-form * {
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  outline: none;
+.add-todo__btn {
+  font-weight: bold;
+  color: darkcyan;
+  background-color: transparent;
   border: none;
-}
-
-form h3 {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-input {
-  display: block;
-  height: 50px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-::placeholder {
-  color: #e5e5e5;
-}
-
-button {
-  margin-top: 50px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #080710;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.social {
-  margin-top: 30px;
+.todo {
   display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-.social div {
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255, 255, 255, 0.27);
-  color: #eaf0fb;
+.todo__list {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
 
-.social div:hover {
-  background-color: rgba(255, 255, 255, 0.47);
+.todo__item {
+  display: flex;
+  justify-content: center;
 }
 
-.social .fb {
-  margin-left: 25px;
+.todo__item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
-.social i {
-  margin-right: 4px;
+.todo__item label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.auth-body--sign-up .sign-in {
-  display: none;
-}
-
-.auth-body--sign-in .sign-up {
-  display: none;
-}
-
-.auth-link {
+.todo__checkbox {
   display: inline-block;
-  margin-top: 18px;
+  margin: 0;
+  margin-right: 8px;
 }
 
-.first {
-  display: flex;
-  position: absolute;
-  top: 313px;
-  left: 320px;
+.todo__checkbox:checked+.todo__text {
+  text-decoration: line-through;
+}
+
+.todo__text {
+  margin-right: 12px;
+}
+
+.todo__btn {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  color: red;
+}
+
+.masala {
+  font-size: x-large;
+  width: 200px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: brown;
 
 }
 
-.second {
-  display: flex;
+.link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.log-out {
   position: absolute;
-  top: 313px;
-  left: 320px;
-  cursor: pointer;
-
-}
-
-.hide {
-  visibility: hidden;
-}
-
-.eye-off {
-  display: flex;
-  position: absolute;
-  top: 313px;
-  left: 320px;
-  cursor: pointer;
-}
-
-.eye-on {
-  display: flex;
-  position: absolute;
-  top: 313px;
-  left: 320px;
-  cursor: pointer;
-}
-
-.hidden {
-  visibility: hidden;
+  top: 100px;
+  left: 1230px;
+  width: 100px;
+  color: blueviolet;
+  padding: 0;
 }
